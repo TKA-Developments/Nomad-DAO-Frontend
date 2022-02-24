@@ -83,7 +83,9 @@ Each midgardian can be bought for 0.05 ETH`}
           />
         </div>
         <div className="py-16 max-w-5xl mx-10">
-          <h3 className="text-center mb-8 text-3xl font-bold">The Benefits</h3>
+          <h3 className="text-center mb-8 text-3xl font-bold text-typography-primary">
+            The Benefits
+          </h3>
           <Cards
             cardsData={[
               {

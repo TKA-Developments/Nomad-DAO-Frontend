@@ -21,9 +21,15 @@ export const Stats = ({ data }: StatsProps) => {
             {idx !== 0 && <StatsSeparator />}
             <div className="flex flex-col items-center">
               {Icon && <Icon />}
-              {title && <h3 className="text-xl font-bold">{title}</h3>}
+              {title && (
+                <h3 className="text-xl text-typography-primary font-bold">
+                  {title}
+                </h3>
+              )}
               {subtitle && (
-                <h4 className="text-md font-semibold">{subtitle}</h4>
+                <h4 className="text-md text-typography-primary font-semibold">
+                  {subtitle}
+                </h4>
               )}
             </div>
           </>

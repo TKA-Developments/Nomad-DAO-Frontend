@@ -14,7 +14,7 @@ export const Step = ({ icon: Icon, title, description }: StepProps) => {
       )}
       <div className="flex flex-col">
         <h3 className="text-typography-primary font-bold text-xl">{title}</h3>
-        <p>{description}</p>
+        <p className="text-typography-primary">{description}</p>
       </div>
     </div>
   );
