@@ -1,6 +1,16 @@
 import type { NextPage } from "next";
 import Link from "next/link";
-import { FaDiscord, FaGamepad, FaRocket } from "react-icons/fa";
+import {
+  FaChartBar,
+  FaDiscord,
+  FaGamepad,
+  FaGhost,
+  FaGlobe,
+  FaNetworkWired,
+  FaPen,
+  FaPeopleArrows,
+  FaRocket,
+} from "react-icons/fa";
 import { Alert } from "../components/Alert";
 import { Cards } from "../components/Cards/Cards";
 import { ImageCarousel } from "../components/ImageCarousel";
@@ -23,9 +33,9 @@ const Index: NextPage = () => {
         <div className="my-24 mx-10 max-w-5xl">
           <ShowcaseImage
             imageSource="/img/people.png"
-            description={`NomadDAO is a limited NFT collection where the token is a membership to a community of MMORPG lovers across the world
+            description={`NomadDAO is a limited NFT collection where the token is a membership to a community of Digital Nomads across the world
 
-Remember the good old days in Runescape, Final Fantasy, WoW, Maple Story, or Ragnarok Online? You are not alone :)`}
+Sometimes as digital Nomad You feel lonely & Borded. But don’t worry, with NomadDAO you can have friends from wherever you are :)`}
             title={() => (
               <h2 className="text-4xl font-bold mt-4 mb-8 text-typography-primary">
                 What is <span className="text-primary">NomadDAO</span>
@@ -72,13 +82,13 @@ Remember the good old days in Runescape, Final Fantasy, WoW, Maple Story, or Rag
         <div className="my-24 mx-10 max-w-5xl">
           <ShowcaseImage
             imageSource="/img/girl1.png"
-            description={`The Specs belongs to 5 job classes: Warrior, Cleric, Archer, Thief, Mage.
+            description={`The Specs belongs to 7 Continents: Asia, Europe, North America, South America, Africa, Australia, Antartica
 
-Each character is uniquely generated over XX different traits, including accessories, face, hair styles, and more.
+Each character is uniquely generated over XX different traits, including landmark in te background, accessories, face, hair styles, and more.
 
 All of them are stored as ERC-721 token in the Ethereum blockchain and hosted in IPFS.
 
-Each midgardian can be bought for 0.05 ETH`}
+Each NomadDAO can be bought for 0.05 ETH`}
             title="The Specs"
           />
         </div>
@@ -89,28 +99,32 @@ Each midgardian can be bought for 0.05 ETH`}
           <Cards
             cardsData={[
               {
-                title: "Biggest Crypto MMORPG Community",
-                icon: () => <FaDiscord className="text-primary" size={30} />,
+                title: "Biggest Crypto Nomad Community",
+                icon: () => (
+                  <FaPeopleArrows className="text-primary" size={30} />
+                ),
               },
               {
                 title: "Expand Your Network",
-                icon: () => <FaDiscord className="text-primary" size={30} />,
+                icon: () => (
+                  <FaNetworkWired className="text-primary" size={30} />
+                ),
               },
               {
                 title: "Own Full Commercial Rights",
-                icon: () => <FaDiscord className="text-primary" size={30} />,
+                icon: () => <FaPen className="text-primary" size={30} />,
               },
               {
-                title: "2000+ Provably Rare MMORPG Characters",
-                icon: () => <FaDiscord className="text-primary" size={30} />,
+                title: "2000+ Provably Rare Nomad Characters",
+                icon: () => <FaGhost className="text-primary" size={30} />,
               },
               {
                 title: "Grow Your Characters Through Involvement",
-                icon: () => <FaDiscord className="text-primary" size={30} />,
+                icon: () => <FaChartBar className="text-primary" size={30} />,
               },
               {
-                title: "Explore MMORPG Metaverses",
-                icon: () => <FaDiscord className="text-primary" size={30} />,
+                title: "Explore Nomad Metaverses",
+                icon: () => <FaGlobe className="text-primary" size={30} />,
               },
             ]}
           />
@@ -121,9 +135,7 @@ Each midgardian can be bought for 0.05 ETH`}
               Roadmap
             </h2>
             <p className="text-center text-typography-primary mb-12">
-              {`This roadmap outlines our goals and where we want to take
-            Midgardian. We have a lot of ideas and concepts that we are working
-            on. It may evolve over time and hopefully become even better!`}
+              {`This roadmap outlines our goals and where we want to take NomadDAO. We have a lot of ideas and concepts that we are working on. It may evolve over time and hopefully become even better!`}
             </p>
             <StepsRow
               steps={[
@@ -136,13 +148,13 @@ Each midgardian can be bought for 0.05 ETH`}
                 {
                   title: "Launch 2",
                   description:
-                    "10000 NFT of 2nd Job evolution of the base classes: Knight, Paladin, Priest, Monk, Hunter, Bard, Assassin, Rogue, Wizard, Sage",
+                    "10000 NFT of 2nd evolution of the base Contients: United State, Russia, Singapore, South Africa, Indonesia, Spain, France, etc",
                   icon: () => <FaRocket className="text-primary" size={35} />,
                 },
                 {
                   title: "Launch Games?",
                   description:
-                    "We work hard with the community to launch any projects or initiatives that is of interest to the community. Be it meetups, products, services, or maybe even games!",
+                    "We work hard with the community to launch any projects or initiatives that is of interest to the community. Be it meetups, products, services, or maybe even Private Villa every city!",
                   icon: () => <FaGamepad className="text-primary" size={35} />,
                 },
               ]}

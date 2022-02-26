@@ -11,13 +11,10 @@ import { classNames } from "../util/string";
 export const Navbar = () => {
   const [isNavbarOpened, setIsNavbarOpened] = useState(false);
   return (
-    <nav className="px-10 absolute z-50 w-full">
-      <div className="flex flex-wrap flex-row justify-between mx-auto">
+    <nav className="px-7 absolute z-50 w-full min-h-[76px] pt-4">
+      <div className="flex flex-row flex-wrap justify-between w-full">
         <div>
-          <img
-            src="https://ik.imagekit.io/bayc/assets/bayc-logo-z.png"
-            className="h-[76px]"
-          />
+          <h1 className="text-primary font-bold text-4xl">NomadDAO</h1>
         </div>
         <button
           type="button"
